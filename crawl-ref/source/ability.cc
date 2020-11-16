@@ -1498,7 +1498,7 @@ static bool _check_ability_possible(const ability_def& abil, bool quiet = false)
             && you.strength(false) == you.max_strength()
             && you.intel(false) == you.max_intel()
             && you.dex(false) == you.max_dex()
-            && !player_rotted()
+            && !player_drained()
             && !you.duration[DUR_WEAK])
         {
             if (!quiet)

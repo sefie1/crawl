@@ -816,7 +816,7 @@ static string _display_vampire_attributes()
 
         {"Negative resistance  ", "           ", "+++   "},
 
-        {"Rotting resistance   ", "           ", "+     "},
+        {"Miasma  resistance   ", "           ", "+     "},
 
         {"Torment resistance   ", "           ", "+     "},
 
@@ -1431,7 +1431,8 @@ bool undead_mutation_rot()
  *
  * If the mutation conflicts with an existing one it may fail. See `_handle_conflicting_mutations`.
  *
- * If the player is undead, this may rot instead. Rotting counts as success.
+ * If the player is undead, this may stat drain instead. Stat draincounts as
+ * success.
  *
  * @param which_mutation    the mutation to use.
  * @param reason            the explanation for how the player got mutated.

@@ -864,6 +864,7 @@ static const mutation_def mut_data[] =
 
 #endif
 // species-dependent innate mutations
+#if TAG_MAJOR_VERSION == 34
 { MUT_ROT_IMMUNITY, 0, 1, mutflag::good, false,
   "rot immunity",
 
@@ -872,6 +873,7 @@ static const mutation_def mut_data[] =
   {"You feel vulnerable to rotting.", "", ""},
 },
 
+#endif
 { MUT_GOURMAND, 0, 1, mutflag::good, false,
   "gourmand",
 

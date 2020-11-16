@@ -35,7 +35,8 @@ Monsters
 Character
 ---------
 * Hunger (and eating) are removed.
-* Ghouls heal on kill instead of by eating chunks.
+* Drain now temporarily reduces max HP instead of skills.
+* Ghouls heal on kill instead of by eating chunks and no longer rot over time.
 * New species: Palentonga, six-limbed scaled mammals with a rolling charge.
 * Centaurs are removed.
 * Deep Elves' Bows aptitude is increased to +3.
