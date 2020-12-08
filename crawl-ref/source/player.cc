@@ -6173,8 +6173,12 @@ int player::res_poison(bool temp) const
 
 bool player::res_miasma(bool temp) const
 {
-    if (is_nonliving(temp) || temp && get_form()->res_miasma())
+    if (get_mutation_level(MUT_MIASMA_IMMUNITY)
+        || is_nonliving(temp)
+        || temp && get_form()->res_miasma())
+    {
         return true;
+    }
 
     const item_def *armour = slot_item(EQ_BODY_ARMOUR);
     if (armour && is_unrandom_artefact(*armour, UNRAND_EMBRACE))
